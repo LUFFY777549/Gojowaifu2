@@ -11,7 +11,7 @@ commands:
   package:
     - "nano inxi"
   start:
-    - "python3 TEAMZYRO"
+    - "python3 -m TEAMZYRO"
 
 env:
   - "ENVIRONMENT=production"
