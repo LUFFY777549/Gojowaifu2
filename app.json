@@ -1,42 +1,42 @@
 {
   "name": "MrZyroWaifu",
   "description": "A Telegram bot built with python-telegram-bot and pyrogram, using MongoDB for data storage.",
-  "repository": "https://github.com/yourusername/your-repo-name",
+  "repository": "https://github.com/LUFFY777549/Gojowaifu2",
   "keywords": ["python", "telegram-bot", "pyrogram", "mongodb"],
   "env": {
     "API_ID": {
       "description": "Telegram API ID for the bot",
-      "value": "24965086",
+      "value": "21218274",
       "required": true
     },
     "API_HASH": {
       "description": "Telegram API Hash for the bot",
-      "value": "b9c764ce47c010e1a887f19fea54f648",
+      "value": "3474a18b61897c672d315fb330edb213",
       "required": true
     },
     "TOKEN": {
       "description": "Telegram Bot Token",
-      "value": "7687059872:AAF9eK6Xc-UgiGPvui9i9XXA1YHrSxdhlI0",
+      "value": "8288304784:AAEWOrG7MYRuKtfU4K2FxAmuKUcDWF_vrrA",
       "required": true
     },
     "GLOG": {
       "description": "Username or ID of the log channel",
-      "value": "Zlog12",
+      "value": "NARUTO_X_SUPPORT",
       "required": true
     },
     "CHARA_CHANNEL_ID": {
       "description": "Username or ID of the character channel",
-      "value": "Zlog12",
+      "value": "-1002527530412",
       "required": true
     },
     "SUPPORT_CHAT_ID": {
       "description": "ID of the support chat",
-      "value": "-1002309742084",
+      "value": "-1002691911300",
       "required": true
     },
     "MONGO_URL": {
       "description": "MongoDB connection URL",
-      "value": "mongodb+srv://Alisha:Alisha123@cluster0.yqcpftw.mongodb.net/?retryWrites=true&w=majority",
+      "value": "mongodb+srv://sufyan532011:5042@auctionbot.5ms20.mongodb.net/?retryWrites=true&w=majority&appName=AuctionBot",
       "required": true
     },
     "PHOTO_URL_1": {
@@ -46,27 +46,27 @@
     },
     "PHOTO_URL_2": {
       "description": "Second photo URL for the bot",
-      "value": "https://files.catbox.moe/7ccoub.jpg",
+      "value": "https://files.catbox.moe/juhav0.jpg",
       "required": false
     },
     "SUPPORT_CHAT": {
       "description": "Support chat URL",
-      "value": "https://t.me/Zyroupdates",
+      "value": "https://t.me/NARUTO_X_SUPPORT",
       "required": true
     },
     "UPDATE_CHAT": {
       "description": "Update chat URL",
-      "value": "https://t.me/ZyroBotCodes",
+      "value": "https://t.me/NARUTO_X_SUPPORT",
       "required": true
     },
     "SUDO": {
       "description": "Comma-separated list of sudo user IDs",
-      "value": "7577185215,5749187175",
+      "value": "7576729648,6574393060",
       "required": true
     },
     "OWNER_ID": {
       "description": "Owner's Telegram user ID",
-      "value": "7073835511",
+      "value": "7576729648",
       "required": true
     }
   },
