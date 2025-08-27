@@ -1,7 +1,6 @@
 # ------------------------------ IMPORTS ---------------------------------
 import logging
 import os
-from telegram.ext import Application
 from motor.motor_asyncio import AsyncIOMotorClient
 from pyrogram import Client, filters as f
 from pyrogram.types import x
@@ -52,7 +51,7 @@ OWNER_ID = int(os.getenv("OWNER_ID", "7576729648"))
 
 # --------------------- TELEGRAM BOT CONFIGURATION -----------------------
 command_filter = f.create(lambda _, __, message: message.text and message.text.startswith("/"))
-application = Application.builder().token(TOKEN).build()
+
 ZYRO = Client("Shivu", api_id=api_id, api_hash=api_hash, bot_token=TOKEN)
 
 # -------------------------- DATABASE SETUP ------------------------------
