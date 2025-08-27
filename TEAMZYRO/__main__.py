@@ -1,19 +1,13 @@
 import importlib
 import logging
 from TEAMZYRO.modules import ALL_MODULES
-from telegram.ext import Application
+from TEAMZYRO import app  # Pyrogram client import
 
 # === Logger ===
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
 )
 LOGGER = logging.getLogger(__name__)
-
-# === Bot Token ===
-from TEAMZYRO.config import TOKEN   # apna token config.py me rakho
-
-# === Application ===
-application = Application.builder().token(TOKEN).build()
 
 
 def main() -> None:
@@ -22,8 +16,8 @@ def main() -> None:
         importlib.import_module("TEAMZYRO.modules." + module_name)
     LOGGER.info("✅ All Features Loaded Baby🥳...")
 
-    # Start bot
-    application.run_polling(drop_pending_updates=True)
+    # Start Pyrogram bot
+    app.run()
 
     LOGGER.info(
         "╔═════ஜ۩۞۩ஜ════╗\n  ☠︎︎ MADE BY GOJOXNETWORK ☠︎︎ \n╚═════ஜ۩۞۩ஜ════╝"
