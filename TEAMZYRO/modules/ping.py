@@ -1,18 +1,18 @@
 import time
+from TEAMZYRO import app, sudo_users
+from pyrogram import Client, filters
+from pyrogram.types import Message
 
-from telegram import Update
-from telegram.ext import CommandHandler, CallbackContext
-
-from TEAMZYRO import application, sudo_users
-
-async def ping(update: Update, context: CallbackContext) -> None:
-    if str(update.effective_user.id) not in sudo_users:
-        update.message.reply_text("Nouu.. its Sudo user's Command..")
+@app.on_message(filters.command("ping") & filters.user(sudo_users))
+async def ping(client: Client, message: Message):
+    user_id = str(message.from_user.id)
+    
+    if user_id not in sudo_users:
+        await message.reply_text("Nouu.. its Sudo user's Command..")
         return
+
     start_time = time.time()
-    message = await update.message.reply_text('Pong!')
+    sent = await message.reply_text("Pong!")
     end_time = time.time()
     elapsed_time = round((end_time - start_time) * 1000, 3)
-    await message.edit_text(f'Pong! {elapsed_time}ms')
-
-application.add_handler(CommandHandler("ping", ping))
+    await sent.edit_text(f"Pong! {elapsed_time}ms")
